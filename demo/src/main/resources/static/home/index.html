@@ -1,0 +1,43 @@
+<html lang="en" ng-app="index" ng-controller="IndexController as indexCtrl" data-ng-init="init()">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Spring boot and Angularjs Tutorial</title>
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+		<script src="/webjars/angularjs/1.4.9/angular.js"></script>
+		<script src="/webjars/angularjs/1.4.9/angular-resource.js"></script>
+		<script src="/webjars/angularjs/1.4.9/angular-route.js"></script>
+		<link rel="stylesheet" href="/webjars/bootstrap/3.3.6/css/bootstrap.css">
+		
+		<script src="js/index.js" type="text/javascript"></script>
+	</head>
+	<body >
+		<nav class="navbar navbar-inverse">
+	  		<div class="container-fluid">
+	    		<div class="navbar-header">
+	   			</div>
+	   			<section>
+		    		<ul class="nav navbar-nav">
+		    		     <li><a class="navbar-brand">MiniApp1</a></li>
+					</ul>
+				</section>
+				<ul class="nav navbar-nav navbar-right">
+	     			<li><a class="btn" href="/logout"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+	    		</ul>
+			</div>
+		</nav>
+		<div class="container-fluid well span6">
+			<div class="row-fluid">
+		        <div class="span12">
+		            <h2>{{user.username}}</h2>
+		            <h4>Email: {{user.email}}</h4>
+		            <h4>First name: {{user.firstName}}</h4>
+		            <h4>Last name: {{user.lastName}}</h4>
+		            <h4><a href="#">More... </a></h4>
+		        </div>
+			</div>
+		</div>
+	</body>
+</html>
